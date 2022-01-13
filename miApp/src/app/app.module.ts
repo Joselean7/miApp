@@ -6,6 +6,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
 
 //Plugins
 import { File } from '@ionic-native/file/ngx';
@@ -21,8 +22,8 @@ import { DocumentViewer } from '@ionic-native/document-viewer/ngx';
     File,
     FileOpener,
     FileTransfer,
-    DocumentViewer
-  
+    DocumentViewer,
+    InAppBrowser 
   ],
   bootstrap: [AppComponent],
 })
