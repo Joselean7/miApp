@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Figures</ion-title>
+    <ion-buttons slor="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <swiper #swiper [config] = "config">
+    <ng-template swiperSlide *ngFor= "let img of images">
+      <img [src]="img">
+    </ng-template>
+  </swiper>
+</ion-content>
